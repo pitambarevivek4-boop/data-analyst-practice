@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Queries - Data Analyst</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        header {
+            background: #2563eb;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+        }
+
+        h2 {
+            color: #2563eb;
+        }
+
+        code {
+            display: block;
+            background: #f1f5f9;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 10px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🔎 SQL Queries</h1>
+    <p>Data Analyst Query Practice</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>1️⃣ WHERE</h2>
+        <p>Used to filter records based on a condition.</p>
+        <code>SELECT * FROM Students
+WHERE age &gt; 20;</code>
+    </div>
+
+    <div class="card">
+        <h2>2️⃣ ORDER BY</h2>
+        <p>Used to sort data in ascending or descending order.</p>
+        <code>SELECT * FROM Students
+ORDER BY age DESC;</code>
+    </div>
+
+    <div class="card">
+        <h2>3️⃣ DISTINCT</h2>
+        <p>Used to display unique values.</p>
+        <code>SELECT DISTINCT city
+FROM Students;</code>
+    </div>
+
+    <div class="card">
+        <h2>4️⃣ GROUP BY</h2>
+        <p>Used to group rows having the same values.</p>
+        <code>SELECT city, COUNT(*)
+FROM Students
+GROUP BY city;</code>
+    </div>
+
+    <div class="card">
+        <h2>5️⃣ HAVING</h2>
+        <p>Used to filter grouped results.</p>
+        <code>SELECT city, COUNT(*)
+FROM Students
+GROUP BY city
+HAVING COUNT(*) &gt; 2;</code>
+    </div>
+
+    <div class="card">
+        <h2>6️⃣ LIMIT</h2>
+        <p>Used to restrict the number of records returned.</p>
+        <code>SELECT * FROM Students
+LIMIT 5;</code>
+    </div>
+
+    <div class="card">
+        <h2>7️⃣ AND</h2>
+        <p>Used when multiple conditions must be true.</p>
+        <code>SELECT * FROM Students
+WHERE age &gt; 20 AND city = 'Mumbai';</code>
+    </div>
+
+    <div class="card">
+        <h2>8️⃣ OR</h2>
+        <p>Used when at least one condition should be true.</p>
+        <code>SELECT * FROM Students
+WHERE city = 'Mumbai' OR city = 'Pune';</code>
+    </div>
+
+    <div class="card">
+        <h2>📝 Practice Question</h2>
+        <p>Which SQL clause is used to filter grouped data?</p>
+        <p><b>Answer: HAVING</b></p>
+    </div>
+
+</div>
+
+</body>
+</html>
