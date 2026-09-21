@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Interview Questions</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        header {
+            background: #3776ab;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #3776ab;
+        }
+
+        button {
+            background: #3776ab;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .answer {
+            display: none;
+            margin-top: 12px;
+            padding: 12px;
+            background: #e8f4ff;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🎤 Python Interview</h1>
+    <p>Python Interview Questions for Data Analyst</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Q1. What is Python?</h2>
+        <button onclick="showAnswer(1)">Show Answer</button>
+        <div id="answer1" class="answer">
+            <b>Answer:</b> Python is a high-level, general-purpose programming language known for its simple and readable syntax.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q2. Why is Python used in Data Analysis?</h2>
+        <button onclick="showAnswer(2)">Show Answer</button>
+        <div id="answer2" class="answer">
+            <b>Answer:</b> Python is widely used for data cleaning, analysis, visualization and automation.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q3. What is a variable in Python?</h2>
+        <button onclick="showAnswer(3)">Show Answer</button>
+        <div id="answer3" class="answer">
+            <b>Answer:</b> A variable is a name used to store a value in a program.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q4. What are common Python data types?</h2>
+        <button onclick="showAnswer(4)">Show Answer</button>
+        <div id="answer4" class="answer">
+            <b>Answer:</b> Common data types include int, float, str, bool, list, tuple, set and dictionary.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q5. What is the difference between a List and a Tuple?</h2>
+        <button onclick="showAnswer(5)">Show Answer</button>
+        <div id="answer5" class="answer">
+            <b>Answer:</b> A List is mutable, while a Tuple is immutable.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q6. What is a Dictionary in Python?</h2>
+        <button onclick="showAnswer(6)">Show Answer</button>
+        <div id="answer6" class="answer">
+            <b>Answer:</b> A Dictionary stores data in key-value pairs.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q7. What is a Set in Python?</h2>
+        <button onclick="showAnswer(7)">Show Answer</button>
+        <div id="answer7" class="answer">
+            <b>Answer:</b> A Set is a collection that stores unique values.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q8. What is a Function?</h2>
+        <button onclick="showAnswer(8)">Show Answer</button>
+        <div id="answer8" class="answer">
+            <b>Answer:</b> A function is a reusable block of code that performs a specific task.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q9. What is a Parameter?</h2>
+        <button onclick="showAnswer(9)">Show Answer</button>
+        <div id="answer9" class="answer">
+            <b>Answer:</b> A parameter is a variable listed inside the parentheses of a function definition.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q10. What is the return statement?</h2>
+        <button onclick="showAnswer(10)">Show Answer</button>
+        <div id="answer10" class="answer">
+            <b>Answer:</b> The return statement sends a value back from a function.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q11. What is the difference between for and while loops?</h2>
+        <button onclick="showAnswer(11)">Show Answer</button>
+        <div id="answer11" class="answer">
+            <b>Answer:</b> A for loop is commonly used to iterate over a sequence, while a while loop runs as long as a condition is true.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q12. What is the difference between break and continue?</h2>
+        <button onclick="showAnswer(12)">Show Answer</button>
+        <div id="answer12" class="answer">
+            <b>Answer:</b> break exits the loop, while continue skips the current iteration and moves to the next iteration.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q13. What is Pandas?</h2>
+        <button onclick="showAnswer(13)">Show Answer</button>
+        <div id="answer13" class="answer">
+            <b>Answer:</b> Pandas is a Python library used for data manipulation and analysis.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q14. What is NumPy?</h2>
+        <button onclick="showAnswer(14)">Show Answer</button>
+        <div id="answer14" class="answer">
+            <b>Answer:</b> NumPy is a Python library used for numerical computing and working with arrays.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q15. What is a DataFrame?</h2>
+        <button onclick="showAnswer(15)">Show Answer</button>
+        <div id="answer15" class="answer">
+            <b>Answer:</b> A DataFrame is a two-dimensional tabular data structure provided by Pandas.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q16. How do you read a CSV file using Pandas?</h2>
+        <button onclick="showAnswer(16)">Show Answer</button>
+        <div id="answer16" class="answer">
+            <b>Answer:</b> Use the Pandas function pd.read_csv().
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q17. How can you handle missing values in Pandas?</h2>
+        <button onclick="showAnswer(17)">Show Answer</button>
+        <div id="answer17" class="answer">
+            <b>Answer:</b> Missing values can be handled using methods such as isnull(), dropna() and fillna().
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q18. How do you remove duplicate rows in Pandas?</h2>
+        <button onclick="showAnswer(18)">Show Answer</button>
+        <div id="answer18" class="answer">
+            <b>Answer:</b> Use the drop_duplicates() method.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q19. What does df.head() do?</h2>
+        <button onclick="showAnswer(19)">Show Answer</button>
+        <div id="answer19" class="answer">
+            <b>Answer:</b> df.head() displays the first five rows of a DataFrame by default.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q20. Why is Python important for a Data Analyst?</h2>
+        <button onclick="showAnswer(20)">Show Answer</button>
+        <div id="answer20" class="answer">
+            <b>Answer:</b> Python helps Data Analysts clean data, analyze datasets, automate tasks and perform advanced data analysis.
+        </div>
+    </div>
+
+</div>
+
+<script>
+function showAnswer(number) {
+    var answer = document.getElementById("answer" + number);
+
+    if (answer.style.display === "block") {
+        answer.style.display = "none";
+    } else {
+        answer.style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
