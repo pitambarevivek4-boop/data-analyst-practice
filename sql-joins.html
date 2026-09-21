@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Joins - Data Analyst</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        header {
+            background: #2563eb;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+        }
+
+        h2 {
+            color: #2563eb;
+        }
+
+        code {
+            display: block;
+            background: #f1f5f9;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 10px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🔗 SQL Joins</h1>
+    <p>Learn and Practice SQL Joins</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>1️⃣ INNER JOIN</h2>
+        <p>Returns records that have matching values in both tables.</p>
+        <code>
+SELECT Students.name, Courses.course_name
+FROM Students
+INNER JOIN Courses
+ON Students.course_id = Courses.course_id;
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>2️⃣ LEFT JOIN</h2>
+        <p>Returns all records from the left table and matching records from the right table.</p>
+        <code>
+SELECT Students.name, Courses.course_name
+FROM Students
+LEFT JOIN Courses
+ON Students.course_id = Courses.course_id;
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>3️⃣ RIGHT JOIN</h2>
+        <p>Returns all records from the right table and matching records from the left table.</p>
+        <code>
+SELECT Students.name, Courses.course_name
+FROM Students
+RIGHT JOIN Courses
+ON Students.course_id = Courses.course_id;
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>4️⃣ FULL OUTER JOIN</h2>
+        <p>Returns matching and non-matching records from both tables.</p>
+        <code>
+SELECT Students.name, Courses.course_name
+FROM Students
+FULL OUTER JOIN Courses
+ON Students.course_id = Courses.course_id;
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>5️⃣ SELF JOIN</h2>
+        <p>Used when a table is joined with itself.</p>
+        <code>
+SELECT A.name AS Employee,
+       B.name AS Manager
+FROM Employees A
+JOIN Employees B
+ON A.manager_id = B.employee_id;
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>📝 Practice Question</h2>
+        <p>Which JOIN returns only matching records from both tables?</p>
+        <p><b>Answer: INNER JOIN</b></p>
+    </div>
+
+</div>
+
+</body>
+</html>
