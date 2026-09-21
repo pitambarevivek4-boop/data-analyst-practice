@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power BI Interview Questions</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        header {
+            background: #f2c811;
+            color: #222;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .question {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+        }
+
+        h2 {
+            color: #d39e00;
+        }
+
+        button {
+            background: #f2c811;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .answer {
+            display: none;
+            margin-top: 12px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🎤 Power BI Interview</h1>
+    <p>Data Analyst Interview Preparation</p>
+</header>
+
+<div class="container">
+
+    <div class="question">
+        <h2>Q1. What is Power BI?</h2>
+        <button onclick="showAnswer(1)">Show Answer</button>
+        <div id="answer1" class="answer">Power BI is a Microsoft Business Intelligence tool used to connect, transform, analyze and visualize data.</div>
+    </div>
+
+    <div class="question">
+        <h2>Q2. What is Power BI Desktop?</h2>
+        <button onclick="showAnswer(2)">Show Answer</button>
+        <div id="answer2" class="answer">Power BI Desktop is the application used to create reports, data models and visualizations.</div>
+    </div>
+
+    <div class="question">
+        <h2>Q3. What is Power Query?</h2>
+        <button onclick="showAnswer(3)">Show Answer</button>
+        <div id="answer3" class="answer">Power Query is used to import, clean and transform data before analysis.</div>
+    </div>
+
+    <div class="question">
+        <h2>Q4. What is DAX?</h2>
+        <button onclick="showAnswer(4)">Show Answer</button>
+        <div id="answer4" class="answer">DAX stands for Data Analysis Expressions. It is used to create calculations, measures and calculated columns.</div>
+    </div>
+
+    <div class="question">
+        <h2>Q5. What is a Measure?</h2>
+        <button onclick="showAnswer(5)">Show Answer</button>
+        <div id="answer5" class="answer">A measure is a DAX calculation that is evaluated dynamically according to the report context.</div>
+    </div>
+
+    <div class="question">
+        <h2>Q6. What is a Calculated Column?</h2>
+        <button onclick="showAnswer(6)">Show Answer</button>
+        <div id="answer6" class="answer">A calculated column is a new column created using a DAX formula.</div>
+    </div>
+
+    <div class="question">
+        <h2>Q7. What is Data Modeling?</h2>
+        <button onclick="showAnswer(7)">Show Answer</button>
+        <div id="answer7" class="answer">Data modeling means creating tables and relationships so that data can be analyzed correctly.</div>
+    </div>
+
+    <div class="question">
+        <h2>Q8. What is a Star Schema?</h2>
+        <button onclick="showAnswer(8)">Show Answer</button>
+        <div id="answer8" class="answer">A Star Schema contains a central fact table connected to multiple dimension tables.</div>
+    </div>
+
+    <div class="question">
+        <h2>Q9. What is a Slicer?</h2>
+        <button onclick="showAnswer(9)">Show Answer</button>
+        <div id="answer9" class="answer">A Slicer is an interactive visual used to filter report data.</div>
+    </div>
+
+    <div class="question">
+        <h2>Q10. What is a Dashboard?</h2>
+        <button onclick="showAnswer(10)">Show Answer</button>
+        <div id="answer10" class="answer">A dashboard presents important business information using visualizations and key metrics.</div>
+    </div>
+
+    <div class="question">
+        <h2>Q11. What is a Report?</h2>
+        <button onclick="showAnswer(11)">Show Answer</button>
+        <div id="answer11" class="answer">A report is a collection of pages containing visualizations, filters and data analysis.</div>
+    </div>
+
+    <div class="question">
+        <h2>Q12. What is CALCULATE() in DAX?</h2>
+        <button onclick="showAnswer(12)">Show Answer</button>
+        <div id="answer12" class="answer">CALCULATE() evaluates an expression after modifying the filter context.</div>
+    </div>
+
+    <div class="question">
+        <h2>Q13. What is a Fact Table?</h2>
+        <button onclick="showAnswer(13)">Show Answer</button>
+        <div id="answer13" class="answer">A fact table contains measurable business data such as sales, quantity and profit.</div>
+    </div>
+
+    <div class="question">
+        <h2>Q14. What is a Dimension Table?</h2>
+        <button onclick="showAnswer(14)">Show Answer</button>
+        <div id="answer14" class="answer">A dimension table contains descriptive information such as customers, products, categories and dates.</div>
+    </div>
+
+    <div class="question">
+        <h2>Q15. What is a Relationship in Power BI?</h2>
+        <button onclick="showAnswer(15)">Show Answer</button>
+        <div id="answer15" class="answer">A relationship connects two tables using related columns, such as Customer ID.</div>
+    </div>
+
+    <div class="question">
+        <h2>Q16. What is One-to-Many Relationship?</h2>
+        <button onclick="showAnswer(16)">Show Answer</button>
+        <div id="answer16" class="answer">It means one record in one table can be related to many records in another table.</div>
+    </div>
+
+    <div class="question">
+        <h2>Q17. What is Drill Down?</h2>
+        <button onclick="showAnswer(17)">Show Answer</button>
+        <div id="answer17" class="answer">Drill Down allows users to move from a higher-level summary to more detailed information.</div>
+    </div>
+
+    <div class="question">
+        <h2>Q18. What is a Filter?</h2>
+        <button onclick="showAnswer(18)">Show Answer</button>
+        <div id="answer18" class="answer">A filter limits the data displayed in a Power BI report or visual.</div>
+    </div>
+
+    <div class="question">
+        <h2>Q19. What is a KPI?</h2>
+        <button onclick="showAnswer(19)">Show Answer</button>
+        <div id="answer19" class="answer">KPI stands for Key Performance Indicator. It is used to track important business performance metrics.</div>
+    </div>
+
+    <div class="question">
+        <h2>Q20. Why is Power BI important for a Data Analyst?</h2>
+        <button onclick="showAnswer(20)">Show Answer</button>
+        <div id="answer20" class="answer">Power BI helps Data Analysts transform data, create interactive reports and communicate business insights through visualizations.</div>
+    </div>
+
+</div>
+
+<script>
+    function showAnswer(number) {
+        const answer = document.getElementById("answer" + number);
+
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+        } else {
+            answer.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>
