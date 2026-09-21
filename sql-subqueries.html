@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Subqueries - Data Analyst</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        header {
+            background: #2563eb;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+        }
+
+        h2 {
+            color: #2563eb;
+        }
+
+        code {
+            display: block;
+            background: #f1f5f9;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 10px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🔁 SQL Subqueries</h1>
+    <p>Practice Subqueries for Data Analyst</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>📘 What is a Subquery?</h2>
+        <p>
+            A subquery is a query written inside another SQL query.
+            It is also called a nested query.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>1️⃣ Greater Than Average</h2>
+        <p>Find employees whose salary is greater than the average salary.</p>
+
+        <code>
+SELECT * FROM Employees<br>
+WHERE salary &gt; (SELECT AVG(salary) FROM Employees);
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>2️⃣ Maximum Salary</h2>
+        <p>Find employees who have the maximum salary.</p>
+
+        <code>
+SELECT * FROM Employees<br>
+WHERE salary = (SELECT MAX(salary) FROM Employees);
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>3️⃣ Minimum Salary</h2>
+        <p>Find employees who have the minimum salary.</p>
+
+        <code>
+SELECT * FROM Employees<br>
+WHERE salary = (SELECT MIN(salary) FROM Employees);
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>4️⃣ Greater Than Employee ID 5</h2>
+        <p>
+            Find vehicles whose price is greater than the price
+            of vehicle ID 5.
+        </p>
+
+        <code>
+SELECT * FROM Vehicles<br>
+WHERE price &gt; (<br>
+&nbsp;&nbsp;SELECT price FROM Vehicles WHERE vehicle_id = 5<br>
+);
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>5️⃣ Same Vehicle Type</h2>
+        <p>
+            Find vehicles that belong to the same vehicle type
+            as vehicle ID 5.
+        </p>
+
+        <code>
+SELECT * FROM Vehicles<br>
+WHERE vehicle_type = (<br>
+&nbsp;&nbsp;SELECT vehicle_type FROM Vehicles WHERE vehicle_id = 5<br>
+);
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>6️⃣ Above Branch Average Price</h2>
+        <p>
+            Find vehicles whose price is greater than the average
+            price of their branch.
+        </p>
+
+        <code>
+SELECT * FROM Vehicles v<br>
+WHERE price &gt; (<br>
+&nbsp;&nbsp;SELECT AVG(price)<br>
+&nbsp;&nbsp;FROM Vehicles<br>
+&nbsp;&nbsp;WHERE branch = v.branch<br>
+);
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>📝 Practice Question</h2>
+        <p>
+            Find all vehicles whose price is greater than the
+            average price of all vehicles.
+        </p>
+
+        <code>
+SELECT * FROM Vehicles<br>
+WHERE price &gt; (SELECT AVG(price) FROM Vehicles);
+        </code>
+    </div>
+
+</div>
+
+</body>
+</html>
