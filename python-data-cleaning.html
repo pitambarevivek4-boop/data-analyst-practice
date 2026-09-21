@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Data Cleaning - Data Analyst</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        header {
+            background: #3776ab;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #3776ab;
+        }
+
+        code {
+            background: #f1f1f1;
+            padding: 10px;
+            display: block;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🧹 Python Data Cleaning</h1>
+    <p>Clean and Prepare Data for Analysis</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>📘 What is Data Cleaning?</h2>
+        <p>Data cleaning means finding and correcting missing, duplicate, incorrect or inconsistent data.</p>
+    </div>
+
+    <div class="card">
+        <h2>❓ Handling Missing Values</h2>
+
+        <code>
+            df.isnull().sum()
+        </code>
+
+        <p>This checks the number of missing values in each column.</p>
+    </div>
+
+    <div class="card">
+        <h2>🗑️ Remove Missing Rows</h2>
+
+        <code>
+            df.dropna()
+        </code>
+
+        <p><b>dropna()</b> removes rows containing missing values.</p>
+    </div>
+
+    <div class="card">
+        <h2>➕ Fill Missing Values</h2>
+
+        <code>
+            df.fillna(0)
+        </code>
+
+        <p><b>fillna()</b> can replace missing values with a specified value.</p>
+    </div>
+
+    <div class="card">
+        <h2>♻️ Remove Duplicate Rows</h2>
+
+        <code>
+            df.drop_duplicates()
+        </code>
+
+        <p>This removes duplicate records from the DataFrame.</p>
+    </div>
+
+    <div class="card">
+        <h2>🔤 Clean Text Data</h2>
+
+        <code>
+            df["Name"] = df["Name"].str.strip()
+        </code>
+
+        <p><b>strip()</b> removes unnecessary spaces from text.</p>
+    </div>
+
+    <div class="card">
+        <h2>🔄 Change Data Type</h2>
+
+        <code>
+            df["Age"] = df["Age"].astype(int)
+        </code>
+
+        <p><b>astype()</b> can convert a column to another data type.</p>
+    </div>
+
+    <div class="card">
+        <h2>🔍 Check Dataset</h2>
+
+        <code>
+            df.info()<br>
+            df.describe()<br>
+            df.head()
+        </code>
+
+        <p>These commands help understand the dataset before analysis.</p>
+    </div>
+
+    <div class="card">
+        <h2>⭐ Why Data Cleaning is Important?</h2>
+
+        <p>• Improves data quality</p>
+        <p>• Removes duplicate records</p>
+        <p>• Handles missing values</p>
+        <p>• Makes analysis more accurate</p>
+        <p>• Important skill for Data Analysts</p>
+    </div>
+
+    <div class="card">
+        <h2>📝 Practice Question</h2>
+
+        <p>Which Pandas function is commonly used to remove duplicate rows?</p>
+
+        <p><b>Answer:</b> drop_duplicates()</p>
+    </div>
+
+</div>
+
+</body>
+</html>
