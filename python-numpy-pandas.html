@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NumPy & Pandas - Data Analyst</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        header {
+            background: #3776ab;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #3776ab;
+        }
+
+        code {
+            background: #f1f1f1;
+            padding: 10px;
+            display: block;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🐼 NumPy & Pandas</h1>
+    <p>Python Libraries for Data Analysis</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>🔢 What is NumPy?</h2>
+        <p>NumPy is a Python library used for numerical calculations and working with arrays.</p>
+
+        <code>
+            import numpy as np<br><br>
+            numbers = np.array([10, 20, 30, 40])
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>📊 NumPy Array</h2>
+
+        <code>
+            import numpy as np<br><br>
+            numbers = np.array([10, 20, 30])<br>
+            print(numbers)
+        </code>
+
+        <p>NumPy arrays are useful for numerical data and calculations.</p>
+    </div>
+
+    <div class="card">
+        <h2>🐼 What is Pandas?</h2>
+        <p>Pandas is a Python library used for data manipulation and analysis.</p>
+
+        <code>
+            import pandas as pd
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>📋 Pandas DataFrame</h2>
+
+        <p>A DataFrame is a table-like structure with rows and columns.</p>
+
+        <code>
+            import pandas as pd<br><br>
+            data = {"Name": ["Amit", "Rahul"],<br>
+            "Age": [25, 28]}<br><br>
+            df = pd.DataFrame(data)<br>
+            print(df)
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>📥 Reading CSV File</h2>
+
+        <p>Pandas can read CSV files for data analysis.</p>
+
+        <code>
+            df = pd.read_csv("sales.csv")
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>👀 View Data</h2>
+
+        <code>
+            df.head()
+        </code>
+
+        <p><b>head()</b> displays the first few rows of the DataFrame.</p>
+    </div>
+
+    <div class="card">
+        <h2>🧹 Basic Data Analysis</h2>
+
+        <code>
+            df.info()<br>
+            df.describe()<br>
+            df.shape
+        </code>
+
+        <p>These functions help understand the dataset.</p>
+    </div>
+
+    <div class="card">
+        <h2>⭐ Why NumPy & Pandas?</h2>
+
+        <p>• Important for Data Analysis</p>
+        <p>• Used for data cleaning</p>
+        <p>• Used for data manipulation</p>
+        <p>• Helps analyze large datasets</p>
+        <p>• Commonly used by Data Analysts</p>
+    </div>
+
+    <div class="card">
+        <h2>📝 Practice Question</h2>
+
+        <p>Which Python library is mainly used for DataFrame and data manipulation?</p>
+
+        <p><b>Answer:</b> Pandas</p>
+    </div>
+
+</div>
+
+</body>
+</html>
