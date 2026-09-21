@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power BI Practice Questions</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        header {
+            background: #f2c811;
+            color: #222;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .question {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+        }
+
+        h2 {
+            color: #d39e00;
+        }
+
+        button {
+            background: #f2c811;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .answer {
+            display: none;
+            margin-top: 12px;
+            color: #16803c;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>📝 Power BI Practice Questions</h1>
+    <p>Data Analyst Practice</p>
+</header>
+
+<div class="container">
+
+    <div class="question">
+        <h2>Q1. What is Power BI?</h2>
+        <p>A. Programming Language<br>B. Business Intelligence Tool<br>C. Operating System<br>D. Database</p>
+        <button onclick="showAnswer(1)">Show Answer</button>
+        <div id="answer1" class="answer">✅ Answer: B. Business Intelligence Tool</div>
+    </div>
+
+    <div class="question">
+        <h2>Q2. Which tool is used to clean and transform data?</h2>
+        <p>A. Power Query<br>B. PowerPoint<br>C. Word<br>D. Notepad</p>
+        <button onclick="showAnswer(2)">Show Answer</button>
+        <div id="answer2" class="answer">✅ Answer: A. Power Query</div>
+    </div>
+
+    <div class="question">
+        <h2>Q3. What is DAX?</h2>
+        <p>A. Database<br>B. Formula Language<br>C. Operating System<br>D. Browser</p>
+        <button onclick="showAnswer(3)">Show Answer</button>
+        <div id="answer3" class="answer">✅ Answer: B. Formula Language</div>
+    </div>
+
+    <div class="question">
+        <h2>Q4. Which DAX function calculates total?</h2>
+        <p>A. AVG()<br>B. SUM()<br>C. MAX()<br>D. COUNT()</p>
+        <button onclick="showAnswer(4)">Show Answer</button>
+        <div id="answer4" class="answer">✅ Answer: B. SUM()</div>
+    </div>
+
+    <div class="question">
+        <h2>Q5. Which visual is useful for showing trends over time?</h2>
+        <p>A. Line Chart<br>B. Card<br>C. Table<br>D. Slicer</p>
+        <button onclick="showAnswer(5)">Show Answer</button>
+        <div id="answer5" class="answer">✅ Answer: A. Line Chart</div>
+    </div>
+
+    <div class="question">
+        <h2>Q6. What is a Slicer?</h2>
+        <p>A. Data filter<br>B. Database<br>C. Formula<br>D. Table</p>
+        <button onclick="showAnswer(6)">Show Answer</button>
+        <div id="answer6" class="answer">✅ Answer: A. Data filter</div>
+    </div>
+
+    <div class="question">
+        <h2>Q7. Which schema is commonly used in Power BI?</h2>
+        <p>A. Star Schema<br>B. Circle Schema<br>C. Square Schema<br>D. Linear Schema</p>
+        <button onclick="showAnswer(7)">Show Answer</button>
+        <div id="answer7" class="answer">✅ Answer: A. Star Schema</div>
+    </div>
+
+    <div class="question">
+        <h2>Q8. Which DAX function modifies filter context?</h2>
+        <p>A. SUM()<br>B. COUNT()<br>C. CALCULATE()<br>D. MIN()</p>
+        <button onclick="showAnswer(8)">Show Answer</button>
+        <div id="answer8" class="answer">✅ Answer: C. CALCULATE()</div>
+    </div>
+
+    <div class="question">
+        <h2>Q9. What does a Card visual show?</h2>
+        <p>A. Single important value<br>B. Multiple tables<br>C. SQL query<br>D. Database structure</p>
+        <button onclick="showAnswer(9)">Show Answer</button>
+        <div id="answer9" class="answer">✅ Answer: A. Single important value</div>
+    </div>
+
+    <div class="question">
+        <h2>Q10. What is the purpose of Data Modeling?</h2>
+        <p>A. Connect and organize tables<br>B. Write emails<br>C. Create documents<br>D. Edit photos</p>
+        <button onclick="showAnswer(10)">Show Answer</button>
+        <div id="answer10" class="answer">✅ Answer: A. Connect and organize tables</div>
+    </div>
+
+</div>
+
+<script>
+    function showAnswer(number) {
+        const answer = document.getElementById("answer" + number);
+
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+        } else {
+            answer.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>
