@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Interview Questions</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        header {
+            background: #2563eb;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+        }
+
+        h2 {
+            color: #2563eb;
+        }
+
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .answer {
+            display: none;
+            background: #f1f5f9;
+            padding: 12px;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+
+        code {
+            display: block;
+            background: #eef2ff;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🎤 SQL Interview</h1>
+    <p>Data Analyst Interview Preparation</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Q1. What is SQL?</h2>
+        <button onclick="showAnswer(1)">Show Answer</button>
+        <div id="answer1" class="answer">
+            SQL stands for Structured Query Language. It is used to store,
+            retrieve, manipulate and analyze data in relational databases.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q2. What is a Database?</h2>
+        <button onclick="showAnswer(2)">Show Answer</button>
+        <div id="answer2" class="answer">
+            A database is an organized collection of data that can be stored,
+            managed and accessed efficiently.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q3. What is a Primary Key?</h2>
+        <button onclick="showAnswer(3)">Show Answer</button>
+        <div id="answer3" class="answer">
+            A Primary Key uniquely identifies each record in a table.
+            It cannot contain duplicate or NULL values.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q4. What is a Foreign Key?</h2>
+        <button onclick="showAnswer(4)">Show Answer</button>
+        <div id="answer4" class="answer">
+            A Foreign Key is a column that creates a relationship between
+            two tables by referring to a key in another table.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q5. Difference between WHERE and HAVING?</h2>
+        <button onclick="showAnswer(5)">Show Answer</button>
+        <div id="answer5" class="answer">
+            WHERE filters rows before grouping. HAVING filters grouped
+            results after GROUP BY.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q6. What is GROUP BY?</h2>
+        <button onclick="showAnswer(6)">Show Answer</button>
+        <div id="answer6" class="answer">
+            GROUP BY groups rows having the same values and is commonly
+            used with aggregate functions.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q7. What is a JOIN?</h2>
+        <button onclick="showAnswer(7)">Show Answer</button>
+        <div id="answer7" class="answer">
+            JOIN is used to combine data from two or more tables using
+            related columns.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q8. What is an INNER JOIN?</h2>
+        <button onclick="showAnswer(8)">Show Answer</button>
+        <div id="answer8" class="answer">
+            INNER JOIN returns only the records that have matching values
+            in both tables.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q9. What is a LEFT JOIN?</h2>
+        <button onclick="showAnswer(9)">Show Answer</button>
+        <div id="answer9" class="answer">
+            LEFT JOIN returns all records from the left table and matching
+            records from the right table.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q10. What is a Subquery?</h2>
+        <button onclick="showAnswer(10)">Show Answer</button>
+        <div id="answer10" class="answer">
+            A subquery is a query written inside another SQL query.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q11. Difference between DELETE, DROP and TRUNCATE?</h2>
+        <button onclick="showAnswer(11)">Show Answer</button>
+        <div id="answer11" class="answer">
+            DELETE removes selected rows, TRUNCATE removes all rows from
+            a table, and DROP removes the table itself.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q12. What is NULL?</h2>
+        <button onclick="showAnswer(12)">Show Answer</button>
+        <div id="answer12" class="answer">
+            NULL represents a missing or unknown value. It is checked using
+            IS NULL or IS NOT NULL.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q13. What is DISTINCT?</h2>
+        <button onclick="showAnswer(13)">Show Answer</button>
+        <div id="answer13" class="answer">
+            DISTINCT removes duplicate values from the result.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q14. What is ORDER BY?</h2>
+        <button onclick="showAnswer(14)">Show Answer</button>
+        <div id="answer14" class="answer">
+            ORDER BY sorts the result in ascending or descending order.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q15. What are Aggregate Functions?</h2>
+        <button onclick="showAnswer(15)">Show Answer</button>
+        <div id="answer15" class="answer">
+            Aggregate functions perform calculations on multiple rows.
+            Examples: COUNT(), SUM(), AVG(), MAX() and MIN().
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q16. What is a VIEW?</h2>
+        <button onclick="showAnswer(16)">Show Answer</button>
+        <div id="answer16" class="answer">
+            A VIEW is a virtual table based on the result of an SQL query.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q17. What is a SELF JOIN?</h2>
+        <button onclick="showAnswer(17)">Show Answer</button>
+        <div id="answer17" class="answer">
+            SELF JOIN joins a table with itself.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q18. What is UNION?</h2>
+        <button onclick="showAnswer(18)">Show Answer</button>
+        <div id="answer18" class="answer">
+            UNION combines the results of two compatible SELECT queries
+            and removes duplicate rows.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q19. What is an Index?</h2>
+        <button onclick="showAnswer(19)">Show Answer</button>
+        <div id="answer19" class="answer">
+            An Index helps the database find and retrieve data faster.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q20. Why is SQL important for a Data Analyst?</h2>
+        <button onclick="showAnswer(20)">Show Answer</button>
+        <div id="answer20" class="answer">
+            SQL helps Data Analysts retrieve, filter, join, aggregate and
+            analyze data stored in databases.
+        </div>
+    </div>
+
+</div>
+
+<script>
+function showAnswer(number) {
+    var answer = document.getElementById("answer" + number);
+
+    if (answer.style.display === "block") {
+        answer.style.display = "none";
+    } else {
+        answer.style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
