@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Data Structures - Data Analyst</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        header {
+            background: #3776ab;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #3776ab;
+        }
+
+        code {
+            background: #f1f1f1;
+            padding: 8px;
+            display: block;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>📦 Python Data Structures</h1>
+    <p>Lists, Tuples, Sets & Dictionaries</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>📋 List</h2>
+        <p>List is an ordered and changeable collection. It allows duplicate values.</p>
+
+        <code>
+            fruits = ["Apple", "Banana", "Mango"]
+        </code>
+
+        <p><b>Useful methods:</b></p>
+        <code>
+            fruits.append("Orange")<br>
+            fruits.remove("Banana")
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>🔒 Tuple</h2>
+        <p>Tuple is an ordered collection that cannot be changed after creation.</p>
+
+        <code>
+            colors = ("Red", "Blue", "Green")
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>🔢 Set</h2>
+        <p>Set stores unique values and does not allow duplicates.</p>
+
+        <code>
+            numbers = {1, 2, 3, 3}
+        </code>
+
+        <p>Output will contain only unique values.</p>
+    </div>
+
+    <div class="card">
+        <h2>🗂️ Dictionary</h2>
+        <p>Dictionary stores data in key-value pairs.</p>
+
+        <code>
+            student = {"name": "Vivek", "age": 29}
+        </code>
+
+        <code>
+            print(student["name"])
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>📌 List Indexing</h2>
+
+        <code>
+            fruits = ["Apple", "Banana", "Mango"]<br>
+            print(fruits[0])
+        </code>
+
+        <p>Output: Apple</p>
+    </div>
+
+    <div class="card">
+        <h2>🧠 Important Difference</h2>
+
+        <p><b>List:</b> Ordered + Changeable</p>
+        <p><b>Tuple:</b> Ordered + Not Changeable</p>
+        <p><b>Set:</b> Unique Values</p>
+        <p><b>Dictionary:</b> Key-Value Pairs</p>
+    </div>
+
+    <div class="card">
+        <h2>📝 Practice Question</h2>
+
+        <p>Which Python data structure stores data in key-value pairs?</p>
+
+        <p><b>Answer:</b> Dictionary</p>
+    </div>
+
+</div>
+
+</body>
+</html>
