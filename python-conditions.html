@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Conditions & Loops</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        header {
+            background: #3776ab;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+        }
+
+        h2 {
+            color: #3776ab;
+        }
+
+        code {
+            background: #eef2f7;
+            padding: 10px;
+            display: block;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🔀 Python Conditions & Loops</h1>
+    <p>Python Programming for Data Analysts</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>🔹 if Statement</h2>
+        <p>The if statement executes code when a condition is true.</p>
+
+        <code>
+            age = 25<br><br>
+            if age >= 18:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print("Adult")
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>🔹 if-else Statement</h2>
+
+        <code>
+            age = 16<br><br>
+            if age >= 18:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print("Adult")<br>
+            else:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print("Minor")
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>🔹 if-elif-else</h2>
+        <p>Used when there are multiple conditions.</p>
+
+        <code>
+            marks = 75<br><br>
+            if marks >= 80:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print("A")<br>
+            elif marks >= 60:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print("B")<br>
+            else:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print("C")
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>🔁 for Loop</h2>
+        <p>A for loop is used to repeat code for each item in a sequence.</p>
+
+        <code>
+            for i in range(1, 6):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print(i)
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>🔄 while Loop</h2>
+        <p>A while loop repeats code while a condition is true.</p>
+
+        <code>
+            i = 1<br><br>
+            while i <= 5:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print(i)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;i += 1
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>🛑 break</h2>
+        <p>break stops the loop immediately.</p>
+
+        <code>
+            for i in range(1, 6):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;if i == 3:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print(i)
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>⏭️ continue</h2>
+        <p>continue skips the current iteration and moves to the next one.</p>
+
+        <code>
+            for i in range(1, 6):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;if i == 3:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print(i)
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>🎯 Practice Question</h2>
+        <p><strong>Question:</strong> Which loop is commonly used to iterate through a sequence in Python?</p>
+        <p><strong>Answer:</strong> for loop</p>
+    </div>
+
+</div>
+
+</body>
+</html>
