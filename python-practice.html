@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Practice Questions</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        header {
+            background: #3776ab;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #3776ab;
+        }
+
+        button {
+            background: #3776ab;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .answer {
+            display: none;
+            margin-top: 12px;
+            padding: 12px;
+            background: #e8f4ff;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>📝 Python Practice Questions</h1>
+    <p>Python Practice for Data Analyst</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Q1. Which keyword is used to define a function in Python?</h2>
+        <button onclick="showAnswer(1)">Show Answer</button>
+        <div id="answer1" class="answer">
+            <b>Answer:</b> def
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q2. Which Python data type stores key-value pairs?</h2>
+        <button onclick="showAnswer(2)">Show Answer</button>
+        <div id="answer2" class="answer">
+            <b>Answer:</b> Dictionary
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q3. Which Python library is commonly used to work with DataFrames?</h2>
+        <button onclick="showAnswer(3)">Show Answer</button>
+        <div id="answer3" class="answer">
+            <b>Answer:</b> Pandas
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q4. Which function is used to display output in Python?</h2>
+        <button onclick="showAnswer(4)">Show Answer</button>
+        <div id="answer4" class="answer">
+            <b>Answer:</b> print()
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q5. Which loop is commonly used to iterate through a sequence?</h2>
+        <button onclick="showAnswer(5)">Show Answer</button>
+        <div id="answer5" class="answer">
+            <b>Answer:</b> for loop
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q6. Which function is used to check the data type of a value?</h2>
+        <button onclick="showAnswer(6)">Show Answer</button>
+        <div id="answer6" class="answer">
+            <b>Answer:</b> type()
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q7. Which Pandas function is used to read a CSV file?</h2>
+        <button onclick="showAnswer(7)">Show Answer</button>
+        <div id="answer7" class="answer">
+            <b>Answer:</b> pd.read_csv()
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q8. Which Pandas method removes duplicate rows?</h2>
+        <button onclick="showAnswer(8)">Show Answer</button>
+        <div id="answer8" class="answer">
+            <b>Answer:</b> drop_duplicates()
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q9. Which Pandas method displays the first rows of a DataFrame?</h2>
+        <button onclick="showAnswer(9)">Show Answer</button>
+        <div id="answer9" class="answer">
+            <b>Answer:</b> head()
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Q10. Which statement is used to return a value from a function?</h2>
+        <button onclick="showAnswer(10)">Show Answer</button>
+        <div id="answer10" class="answer">
+            <b>Answer:</b> return
+        </div>
+    </div>
+
+</div>
+
+<script>
+function showAnswer(number) {
+    var answer = document.getElementById("answer" + number);
+
+    if (answer.style.display === "block") {
+        answer.style.display = "none";
+    } else {
+        answer.style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
